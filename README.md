@@ -12,7 +12,10 @@ Sarah Ostadabbas (ostadabbas@ece.neu.edu)
 
 
 ## Before Everything
-Same as the original CPM model and I cited here.  
+- If you only need to run the code. You can simply download our code model and run the test on normal caffe.
+- If you need training. Please download the [CPM caffe](https://github.com/shihenw/caffe) with customized layers. 
+- Please refer the original CPM for environment setting for training. It include compiled python and matlab interface. 
+Ubuntu 14.04, OpenCV 2.4.10, CUDA 8.0, CUDNN 5. 
 
 ## Testing
 Please download our dataset and  our pretrained model from our website. 
