@@ -12,7 +12,7 @@ Sarah Ostadabbas (ostadabbas@ece.neu.edu)
 
 
 ## Before Everything
-Same as the original CPM model and I cited here.
+Same as the original CPM model and I cited here.  
 - Install [CPM Caffe](http://caffe.berkeleyvision.org/). If you are interested in training this model on your own machines, or realtime systems, please use [our version](https://github.com/shihenw/caffe) (a submodule in this repo) with customized layers. Make sure you have compiled python and matlab interface. This repository at least runs on Ubuntu 14.04, OpenCV 2.4.10, CUDA 8.0, and CUDNN 5. The following assumes you use `cmake` to compile caffe in `<repo path>/caffe/build`.
 [//]: # (- Copy `caffePath.cfg.example` to `caffePath.cfg` and set your own path in it.)
 - Include `<repo path>/caffe/build/install/lib` in environment variable `$LD_LIBRARY_PATH`.
@@ -23,7 +23,7 @@ Please download our dataset and  our pretrained model from our website.
 Unzip the model in the model folder.
 In our work, [271-300,401-419] are employed for testing. Rest for training. 
 
-Or you can train the model yourself as instructed in training session. 
+Or you can train the model yourself as instructed in training session.  
 Or you can download the original CPM pretrained model with testing/get_model.sh to test the performance on our IRS data.  
 
 
@@ -36,12 +36,12 @@ Note, in our original design, we evaluate on the whole dataset for furthere refe
 
 
 ## Training
-Our model is fine tuned on the pretrained CPM model.
-- Download the CPM pretrianed model via test/get_model.sh.
-- Run genJSONv5_rl('MANNE_GRAY') to generate a json file in `training/json/` folder. This will only include the training samples in the dataset. Our 
-- Run `genLMDBv4_rl.py` to generate LMDBs for CPM data layer in [CPM caffe](https://github.com/shihenw/caffe). Change the main function to select dataset, and note that you can generate a LMDB with multiple datasets.
-- Our network definition prototxt files are already included in this code release.
-- Train our model with weights initialized by the CPM pretraind model. We employ their best performance model for initial weights. (pose_iter_985000_addLEEDS.caffemodel)
+Our model is fine tuned on the pretrained CPM model.  
+- Download the CPM pretrianed model via test/get_model.sh.  
+- Run genJSONv5_rl('MANNE_GRAY') to generate a json file in `training/json/` folder. This will only include the training samples in the dataset. Our   
+- Run `genLMDBv4_rl.py` to generate LMDBs for CPM data layer in [CPM caffe](https://github.com/shihenw/caffe). Change the main function to select dataset, and note that you can generate a LMDB with multiple datasets.  
+- Our network definition prototxt files are already included in this code release.  
+- Train our model with weights initialized by the CPM pretraind model. We employ their best performance model for initial weights. (pose_iter_985000_addLEEDS.caffemodel)  
 
 
 Note: 
