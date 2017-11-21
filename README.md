@@ -13,9 +13,9 @@ Sarah Ostadabbas (ostadabbas@ece.neu.edu)
 
 ## Before Everything
 Same as the original CPM model and I cited here.  
-  - Install [CPM Caffe](http://caffe.berkeleyvision.org/) with customized layers. Make sure you have compiled python and matlab interface. This repository at least runs on Ubuntu 14.04, OpenCV 2.4.10, CUDA 8.0, and CUDNN 5. The following assumes you use `cmake` to compile caffe in `<repo path>/caffe/build`..[//]: # (- Copy `caffePath.cfg.example` to `caffePath.cfg` and set your own path in it.) 
-  - Include `<repo path>/caffe/build/install/lib` in environment variable `$LD_LIBRARY_PATH`. 
-  - Include `<repo path>/caffe/build/install/python` in environment variable `$PYTHONPATH`. 
+* Install [CPM Caffe](http://caffe.berkeleyvision.org/) with customized layers. Make sure you have compiled python and matlab interface. This repository at least runs on Ubuntu 14.04, OpenCV 2.4.10, CUDA 8.0, and CUDNN 5. The following assumes you use `cmake` to compile caffe in `<repo path>/caffe/build`..[//]: # (- Copy `caffePath.cfg.example` to `caffePath.cfg` and set your own path in it.)  
+* Include `<repo path>/caffe/build/install/lib` in environment variable `$LD_LIBRARY_PATH`.  
+* Include `<repo path>/caffe/build/install/python` in environment variable `$PYTHONPATH`.  
 
 ## Testing
 Please download our dataset and  our pretrained model from our website. 
