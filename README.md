@@ -7,7 +7,7 @@ This code is based on the original "[Convolutional Pose Machines](http://arxiv.o
 We hook up our data to original CPM for your convenience. 
 You can also only download our minimal version (... link) which includes our pretrianed model and network definition prototxt file and hook up everything to original CPM. 
 
-Contact: Shuangjun Liu (shuliu@ece.neu.edu)  
+Contact: Shuangjun Liu (shuliu@ece.neu.edu, shuangjunliu16@gmail.com)  
 Sarah Ostadabbas (ostadabbas@ece.neu.edu)
 
 
