@@ -7,7 +7,7 @@ This code is based on the original "[Convolutional Pose Machines](http://arxiv.o
 We hook up our data to original CPM for your convenience. 
 You can also only download our minimal version (... link) which includes our pretrianed model and network definition prototxt file and hook up everything to original CPM. 
 
-Contact: Shuangjun Liu (shuliu@ece.neu.edu)
+Contact: Shuangjun Liu (shuliu@ece.neu.edu)  
 Sarah Ostadabbas (ostadabbas@ece.neu.edu)
 
 
@@ -28,12 +28,11 @@ Or you can download the original CPM pretrained model with testing/get_model.sh 
 
 
 ### Matlab
-- 1. CPMtest2_rl.m: Show a demo pose estimation on our sample IRS image. Default model is number 6 with our optimal training strategy. You can also change it in config1.m to other model for comparison. 
+1. CPMtest2_rl.m: Show a demo pose estimation on our sample IRS image. Default model is number 6 with our optimal training strategy. You can also change it in config1.m to other model for comparison. 
 
-- 2. `bchTestM6.m`: Run the model on test benchmark with model 6 and save the prediction result in predicts folder. 
-- Note, in our original design, we evaluate on the whole dataset for furthere reference. To calculate the accuracy, please index out test corresponding result for accuracy evaluation. [271-300,401-409].
-
-- 3. Our test results are already included in this code for different training strategy. Only the portrait view result is included. You can also test on multiple lying direction to check the performance. 
+2. `bchTestM6.m`: Run the model on test benchmark with model 6 and save the prediction result in predicts folder. 
+Note, in our original design, we evaluate on the whole dataset for furthere reference. To calculate the accuracy, please index out test corresponding result for accuracy evaluation. [271-300,401-409].
+3. Our test results are already included in this code for different training strategy. Only the portrait view result is included. You can also test on multiple lying direction to check the performance. 
 
 
 ## Training
