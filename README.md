@@ -44,7 +44,7 @@ Our model is fine tuned on the pretrained CPM model.
 - Train our model with weights initialized by the CPM pretraind model. We employ their best performance model for initial weights. (pose_iter_985000_addLEEDS.caffemodel)  
 
 
-Note: 
+Note:  
 1. pose_train_testFTS1_6.prototxt.  
 Train the fc layers of first and last stage only. 
 
