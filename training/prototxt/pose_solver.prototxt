@@ -1,0 +1,20 @@
+net: "prototxt/MANNE_GRAY_SC0_2/pose_train_test.prototxt" 
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.000080
+momentum: 0.9
+weight_decay: 0.0005
+# The learning rate policy
+lr_policy: "step"
+gamma: 0.333
+stepsize: 400
+# Display every 100 iterations
+display: 10
+# The maximum number of iterations
+# max_iter: 600000
+# max_iter: 10000 
+max_iter: 2000 
+# snapshot intermediate results
+snapshot: 100
+snapshot_prefix: "prototxt/MANNE_GRAY_SC0_2/caffemodel/pose"
+# solver mode: CPU or GPU
+solver_mode: GPU
