@@ -35,7 +35,6 @@ Note, in our original design, we evaluate on the whole dataset for furthere refe
 
 
 ## Training
-Our model is fine tuned on the pretrained CPM model.  
 - Download the CPM pretrianed model via test/get_model.sh.  
 - Run genJSONv5_rl('MANNE_GRAY') to generate a json file in `training/json/` folder. This will only include the training samples in the dataset. Our   
 - Run `genLMDBv4_rl.py` to generate LMDBs for CPM data layer in [CPM caffe](https://github.com/shihenw/caffe). Change the main function to select dataset, and note that you can generate a LMDB with multiple datasets.  
