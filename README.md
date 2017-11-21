@@ -45,8 +45,9 @@ Our model is fine tuned on the pretrained CPM model.
 
 
 Note:  
+
 1. pose_train_testFTS1_6.prototxt.  
-Train the fc layers of first and last stage only. 
+Train the fc layers of first and last stage only.
 
 2. pose_train_testFTS1-6.prototxt.
 Train fc layers across all 6 stages.
