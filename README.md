@@ -5,7 +5,9 @@ Shuangjun Liu, Yu Yin, Sarah Ostadabbas
 This code is based on the original "[Convolutional Pose Machines](http://arxiv.org/abs/1602.00134)" caffe version, CVPR 2016.
 
 We hook up our data to original CPM for your convenience. 
-You can also only download our minimal version (... link) which includes our pretrianed model and network definition prototxt file and hook up everything to original CPM. 
+You can also only download our [minimal version](http://www.coe.neu.edu/Research/AClab/pose/CPM_MANNE_min.zip) which includes our pretrianed model and network definition prototxt file and hook up everything to original CPM. 
+
+Besides CPM pose estimation, we also provides toolkit towards practical application including on-demand estimation trigger, bed orientation detection based on 2-end HOG pose rectification.  
 
 Contact: Shuangjun Liu (shuliu@ece.neu.edu, shuangjunliu16@gmail.com)  
 Sarah Ostadabbas (ostadabbas@ece.neu.edu)
@@ -57,6 +59,26 @@ Train fc layers across all 6 stages. The stage 2 convolutional layer 3 is also i
 Follow the traditional fine tune rule. Only train the very last fc layer of the whole network.
 
 When training, please modify the pose_solver.prototxt for the fine tuning strategy you like. The total iterations can also altered here. 
+
+## On-demand Estimation Trigger 
+On-demand trigger codes are located in folder onDemTrigger/. A demo video is provided as 'pose1.mov'. 
+Simply run the `s_findAgState.m` which will find the trigger point when the state comes to stable from previous aggitation. A trigger plot will also show up.  
+
+## Orientation Detection 
+![rectification](ortDetection/demo_rectification.PNG)
+As mentioned in the paper that lying orientation has huge impact on pose estimation performance. Here we provide 2-end HOG rectification method. Combined with the minmal bounding box detection it can work on random orientation rectifciation.  
+Codes are located inside ortDetection/.
+Before running the code, you need download the dataset mentioned above and set the data path correctly. For testing, you also need to download the [random oriented version](http://www.coe.neu.edu/Research/AClab/pose/BW3SC0_2_20170331_rndOrt.zip).  
+`imgRt` to the 'YOUR_PATH/BW3MltSC0_2_170331' which contains 4 standard directions. 
+`imgRtTest` to 'YOUR_PATH/BW3SC0_2_20170331_rndOrt' 
+
+To run the code, 
+
+1. run the `s_gen2endHogFts.m`  to generate hog features from image 
+
+2. run `s_genOrtMdlAug.m` to generate the 2-end rectification model.  
+
+3. run `s_pdctOrts.m` to show rectification result. 
 
 
 ## Citation
