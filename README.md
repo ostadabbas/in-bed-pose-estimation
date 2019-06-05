@@ -20,7 +20,7 @@ Sarah Ostadabbas (ostadabbas@ece.neu.edu)
 Ubuntu 14.04, OpenCV 2.4.10, CUDA 8.0, CUDNN 5. 
 
 ## Testing
-Please download our dataset and  our pretrained model from our [website](http://www.northeastern.edu/ostadabbas/2016/09/01/a-vision-based-system-for-in-bed-posture-tracking/). 
+Please download our dataset and  our pretrained model from our [website](http://www.northeastern.edu/ostadabbas/2017/09/01/a-vision-based-system-for-in-bed-posture-tracking/). 
 Unzip the model in the model folder.
 In our work, [271-300,401-419] are employed for testing. Rest for training. 
 
